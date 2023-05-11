@@ -131,7 +131,7 @@ public class GameView extends SurfaceView implements Runnable{
         }
         // задание порога значений местоположения самолёта
         if (flight.getY() < 0) { // запрет на снижение меньше нуля
-            flight.setY(screenY/2);
+            flight.setY(0);
         } else if (flight.getY() >= screenY - flight.getHeight()) { // запрет на подъём выше экрана за минусом высоты самолёта
             flight.setY(screenY/2);
         }
